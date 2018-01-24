@@ -15,11 +15,14 @@ write your code here
 
 @media print {
     
+    .tm-main-content {
+       margin-left: 0;
+   }
+    
    .tm-sidebar {
        display: none;
    }
-   
-   .tm-content-box {
-       display: none;
+   .tm-section-title {
+       color: blue;
    }
 }
