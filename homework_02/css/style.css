@@ -44,8 +44,12 @@ write your code here
     h2.tm-section-title {
     color:blue;
 }
-
+    p::first-letter {
+    color:black; 
+    font-size: inherit;
 }
+}
+
 /* Task 2. */ 
 
 li.box{
@@ -57,4 +61,11 @@ border-right: 1px solid silver !important;
 }
 li.box:nth-last-child(-n+3){
 border-bottom: 1px solid silver !important;
+}
+
+/* Task 3. */
+
+p::first-letter {
+    color: #76cdd7;
+    font-size: 30px;
 }
