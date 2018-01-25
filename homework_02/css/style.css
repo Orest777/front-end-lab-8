@@ -47,3 +47,14 @@ write your code here
 
 }
 /* Task 2. */ 
+
+li.box{
+border-bottom: none !important;
+border-right: none !important;
+}
+li.box:nth-child(3n){
+border-right: 1px solid silver !important;
+}
+li.box:nth-last-child(-n+3){
+border-bottom: 1px solid silver !important;
+}
