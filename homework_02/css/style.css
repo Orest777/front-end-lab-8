@@ -13,16 +13,39 @@ write your code here
 
 */
 
+/* Task 1. Fix print version */ 
+
 @media print {
-    
-    .tm-main-content {
-       margin-left: 0;
-   }
-    
-   .tm-sidebar {
-       display: none;
-   }
-   .tm-section-title {
-       color: blue;
-   }
+    .tm-sidebar, .boxes, .gallery-container, .heading, .blocks, .carousel, .img-fluid  {
+    display: none;
 }
+    #contact {
+    display: none;
+}
+    .tm-main-content {
+    margin-left: 0px;
+}
+    .tm-banner {
+    height: 250px;
+}
+
+    .tm-banner-inner {
+    height: 200px;
+    margin-bottom: 0;
+}
+    .flex-2-col {
+    display: flex;
+    flex-direction:column;
+    margin-left: 0;
+}
+
+    .tm-team-description-container {
+    max-width: 550px;
+    padding: 0;
+}
+    h2.tm-section-title {
+    color:blue;
+}
+
+}
+/* Task 2. */ 
