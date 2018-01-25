@@ -79,4 +79,8 @@ p::first-letter {
   box-shadow: 1px 1px 2px 3px #888888;  
 }
 
+/* Task 5 */
+    .box a:first-child img{
+    border:2px solid silver;
+}
 }
