@@ -42,16 +42,15 @@ write your code here
     padding: 0;
 }
     h2.tm-section-title {
-    color:blue;
+    color:#0000ff;
 }
-    p::first-letter {
-    color:black; 
-    font-size: inherit;
-}
+
 }
 
 /* Task 2. */ 
 
+@media screen {
+    
 li.box{
 border-bottom: none !important;
 border-right: none !important;
@@ -68,4 +67,16 @@ border-bottom: 1px solid silver !important;
 p::first-letter {
     color: #76cdd7;
     font-size: 30px;
+}
+
+/* Task 4 */
+
+  .tm-sidebar, .tm-content-box {
+  box-shadow: 1px 1px 2px 3px #888888;
+}
+
+#contact {
+  box-shadow: 1px 1px 2px 3px #888888;  
+}
+
 }
