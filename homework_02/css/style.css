@@ -16,13 +16,20 @@ write your code here
 /* Task 1. Fix print version */ 
 
 @media print {
-    .tm-sidebar, .boxes, .gallery-container, .heading, .blocks, .carousel, .img-fluid  {
+.tm-sidebar {
     display: none;
-}
-    #contact {
-    display: none;
-}
-    .tm-main-content {
+        
+    }
+
+    section:nth-child(n+3) {
+        display: none;
+    }
+    
+    .boxes {
+        display: none;
+    }
+    
+     .tm-main-content {
     margin-left: 0px;
 }
     .tm-banner {
@@ -42,7 +49,7 @@ write your code here
     padding: 0;
 }
     h2.tm-section-title {
-    color:blue;
+    color:#0000ff;
 }
 
 }
@@ -64,7 +71,7 @@ border-bottom: 1px solid silver !important;
 
 /* Task 3. */
 
-p::first-letter {
+    p::first-letter {
     color: #76cdd7;
     font-size: 30px;
 }
@@ -86,9 +93,22 @@ p::first-letter {
 }
 
 /* Task 6 */
-.carousel-inner h2.tm-section-title {
+   .carousel-inner h2.tm-section-title {
     color: gainsboro;
     letter-spacing: 5px;
+}
+
+/* Task 7 */
+
+h2+p {
+    font-style: italic;
+}
+
+/* Task 8 */
+
+section:nth-child(2) p {
+text-indent: 20px;
+line-height: 30px;
 }
 
 }
