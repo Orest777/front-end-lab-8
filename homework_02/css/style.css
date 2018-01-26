@@ -42,7 +42,7 @@ write your code here
     padding: 0;
 }
     h2.tm-section-title {
-    color:#0000ff;
+    color:blue;
 }
 
 }
@@ -80,10 +80,15 @@ p::first-letter {
 }
 
 /* Task 5 */
+
     .box a:first-child img{
     border:2px solid silver;
 }
 
 /* Task 6 */
+.carousel-inner h2.tm-section-title {
+    color: gainsboro;
+    letter-spacing: 5px;
+}
 
 }
