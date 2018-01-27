@@ -79,7 +79,7 @@ border-bottom: 1px solid silver !important;
 /* Task 4 */
 
 .tm-sidebar, section {
-	box-shadow: 1px 1px 9px 6px rgba(0,0,0, .2);
+	box-shadow: 1px 1px 9px 6px #C2C2C2;
 }
 
 .flex-2-col {
@@ -170,7 +170,7 @@ section:nth-child(3) li:first-child a:after, section:nth-child(3) li:nth-child(3
 
 
 /* Task 12 */
-.contact-form input.form-control{
+.contact-form input[type="text"]{
     color:red ;
 }
 
