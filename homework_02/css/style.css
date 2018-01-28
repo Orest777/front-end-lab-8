@@ -16,7 +16,7 @@ write your code here
 /* Task 1. Fix print version */ 
 
 @media print {
-.tm-sidebar {
+   .tm-sidebar {
     display: none;
         
     }
@@ -113,30 +113,30 @@ write your code here
 
 /* Task 9 */ 
 
-section:nth-child(3) h2 {
+    section:nth-child(3) h2 {
     color: #6DCAD6;
     text-align: center;
 }
 
-section:nth-child(3) a:hover {
+    section:nth-child(3) a:hover {
 	color: #0AA0F5;
 }
 
-section:nth-child(3) a {
+    section:nth-child(3) a {
     color: #000000;
 }
-section:nth-child(3) a:visited {
+    section:nth-child(3) a:visited {
     color: silver;
 }
 
-section:nth-child(3) a:hover {
+    section:nth-child(3) a:hover {
 	color: #0AA0F5;
 	transition: color .3s;
 }
-section:nth-child(3) a {
+    section:nth-child(3) a {
 	position: relative
 }
-section:nth-child(3) li:first-child a:after, section:nth-child(3) li:nth-child(3) a:after {
+    section:nth-child(3) li:first-child a:after, section:nth-child(3) li:nth-child(3) a:after {
 	position: absolute;
 	content: 'New';
 	color: red;
@@ -147,19 +147,19 @@ section:nth-child(3) li:first-child a:after, section:nth-child(3) li:nth-child(3
 
 /* Task 10. */
 
-.blocks li p:first-letter {
+    .blocks li p:first-letter {
     color:#0d0d0d;
 }
 
-.blocks li:nth-child(1) {
+    .blocks li:nth-child(1) {
     background-color: #f2f2f2;
 }
    
-.blocks li:nth-child(3) {
+    .blocks li:nth-child(3) {
     background-color: #f2f2f2;
 }
 
-.blocks li:nth-child(5) {
+    .blocks li:nth-child(5) {
     background-color: #f2f2f2;
 }
 
@@ -174,7 +174,7 @@ section:nth-child(3) li:first-child a:after, section:nth-child(3) li:nth-child(3
     color:red ;
 }
 
-.btn {
+    .btn {
     color: red;
 }
 
