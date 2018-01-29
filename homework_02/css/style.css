@@ -185,7 +185,7 @@ write your code here
  @media screen and (max-width: 1140px),(max-height: 835px){
     
     .container {
-        margin-left: 0;
+    margin-left: 0;
     }
     
     .tm-sidebar{
@@ -208,6 +208,7 @@ write your code here
     .tm-main-nav {
     padding-top: 0;
 	padding-bottom: 0;
+	padding-left: 20px;
 }
 
     .tm-main-nav li+li {
