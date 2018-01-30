@@ -1,0 +1,201 @@
+$background-color: null !default;
+$background-body-color: null !default;
+$heading-color: null !default;
+$text-color: null !default;
+$img-border: null !default;
+$brief-background-color: null !default;
+$brief-width: null !default;
+$link-color: null !default;
+$link-hover: null !default;
+$table-background-color: null !default;
+$th-background-color: null !default;
+$label-text-color: null !default;
+$input-border: null !default;
+
+/* Start to write a mixins */
+
+@mixin main-headings {
+	h1 {
+	color: $heading-color;
+	text-align: center;
+	}
+}
+
+@mixin text {
+	p {
+	color: $text-color;
+	margin: 0 15px 0 15px;
+	}
+}
+
+@mixin subheadings {
+	h2 {
+	color: $heading-color;
+	margin-left: 15px;
+	}
+}
+
+@mixin img-border{
+	img {
+	border: 2px solid $img-border;
+	padding: 2px;
+	}
+}
+
+@mixin img-left {
+	.img-left {
+	float:left;
+	margin: 0 15px 15px 15px;
+	}
+}
+
+@mixin img-right {
+	.img-right {
+	float:right;
+	margin: 0 15px 0 15px;
+	}
+}
+
+@mixin brief {
+	.brief {
+	float: left;
+	box-sizing: border-box;
+	width: $brief-width;
+    margin: 10px;
+    padding: 20px;
+	background: $brief-background-color;
+    }
+}
+
+@mixin table {
+	table {
+	background:$table-background-color;
+	}
+}
+
+@mixin table-th {
+	th {
+	text-align: left;
+	text-transform: uppercase;
+	background: $th-background-color;
+	padding: 10px 15px;
+    }
+}
+
+@mixin button {
+	button {
+    background: #FFFFFF;
+    border: 1px solid $link-color;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    color: $link-color;
+    font-size: 15px;
+    transition: color .2s;
+    cursor: pointer;
+
+    &:hover {
+			transition: color .2s;
+			background: $link-color;
+			color: $background-body-color;
+    }
+	}
+}
+
+/* Finished mixins */
+
+/* Start to write body styles */
+
+body {
+  width: 960px;
+  margin: 0 auto;
+  background: $background-color;
+ }
+
+#content {
+	background: $background-body-color;
+
+	@include main-headings;
+	@include text;
+	@include subheadings;
+	@include img-border;
+	@include img-left;
+	@include img-right;
+	@include brief;
+	
+
+}
+
+a {
+		color: $link-color;
+		text-decoration: underline;
+		transition: color .2s;
+		margin-left: 15px;
+		display: block;
+
+		&:hover {
+			transition: color .2s;
+			color: $link-hover;
+		}
+	}
+
+table {
+		border-collapse: collapse;
+		background: $table-background-color;
+
+		@include table-th;
+
+		caption {
+			text-align: right;
+		}
+		tr {
+
+			&+tr {
+				border-bottom: 1px solid $th-background-color;
+			}
+
+			td {
+				padding: 10px 15px;
+			}
+		}
+	}
+
+div {
+	margin: 0 15px 0 15px;
+}
+	form {
+	    fieldset {
+	     border:none;
+	}
+	.form-element {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	}
+	.form-element fieldset {
+    margin-left: -11px;
+	margin-right: -11px;
+	}
+	
+    label {
+    display: block;
+	margin-bottom: 5px;
+	color: $label-text-color;
+	}
+    input {
+    box-sizing: border-box;
+    border: 1px solid $input-border;
+    width: 100%;
+    padding: 5px;
+    }
+    .textarea {
+    box-sizing: border-box;
+    width: 100%;
+	height: 200px;
+	border: 1px solid $input-border;
+	color: $label-text-color;
+    }
+    @include button;
+    }
+
+
+

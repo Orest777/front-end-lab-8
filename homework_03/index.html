@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -124,6 +124,39 @@
       Центральна міська дитяча бібліотека, Обласна бібліотека для дітей, Обласна бібліотека для юнацтва та інші.</p>
     <div>
        <!--TODO write form fields-->
+       <h2>Залишити відгук</h2>
+       <form method="POST" action="">
+         <div class="form-element">
+          <fieldset>
+         <label>
+           ІМЯ
+           <input type="text" name="name" placeholder="Ведіть імя" required />
+           </label>
+           </fieldset>
+           <fieldset>
+         <label>
+           ПРІЗВИЩЕ
+           <input type="text" name="name" placeholder="Ведіть прізвище" required />
+         </label>
+         </fieldset>
+         </div>
+         <label>
+           ІМЕЙЛ
+           <input type="email" name="email" placeholder="Ведіть імейл" required/>
+         </label>
+         <label>
+           ОЦІНІТЬ
+           <input type="text" name="mark" placeholder="" required/>
+         </label>
+          <label>
+             НАПИШІТЬ ВІДГУК
+             <textarea class="textarea">Залишити відгук</textarea>
+           </label>
+           <br>
+         <button type="submit">
+         НАДІСЛАТИ
+       </button>
+        </form>
     </div>
   </div>
 </body>
